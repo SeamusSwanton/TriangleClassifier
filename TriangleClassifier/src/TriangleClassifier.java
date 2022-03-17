@@ -9,7 +9,7 @@ public static String message2 = "";
 
 
 	public static boolean isValidTriangle(int i, int j, int k) {
-		if( (i + j + k != 180) && (i<1) && (j<1) && (k<1)) {
+		if( (i + j + k != 180) || (i<1) || (j<1) || (k<1)) {
 			isValidTriangle = false;
 		}
 		return isValidTriangle;
